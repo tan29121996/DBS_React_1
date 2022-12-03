@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Transaction({transaction, toggleState, setToggleState}) {
+function ScheduledTransaction({transaction, toggleState, setToggleState}) {
   return (
     <div style={{ 
         display: 'flex', 
@@ -35,10 +35,13 @@ function Transaction({transaction, toggleState, setToggleState}) {
                 <div style={{ display: 'flex', alignItems: 'center', width: '15%', height: '90%' }}>
                     <div style={{ width: '100%', height: 30 }}>{transaction.Comment}</div>
                 </div>
+                <div style={{ display: 'flex', alignItems: 'center', width: '15%', height: '90%' }}>
+                    <img style={{ width: 50 }} src='https://mpng.subpng.com/20191109/hxt/transparent-bin-icon-delete-icon-empty-icon-5dc7032cac0724.6832684215733235647046.jpg'/>
+                </div>
             </div>
         </div>
     </div>
   );
 }
 
-export default Transaction;
+export default ScheduledTransaction;
