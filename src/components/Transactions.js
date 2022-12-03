@@ -21,10 +21,10 @@ function Transactions({toggleState, setToggleState}) {
 ];
     
     return (
-    <div style={{ display: 'flex', width: '100%', height: '100%', borderTopLeftRadius: 20,  borderTopRightRadius: 20, background: '#ec1d25' }}>
+    <div style={{ display: toggleState === 1 ? 'flex': 'none', width: '100%', height: '100%', borderTopLeftRadius: 20,  borderTopRightRadius: 20, background: '#ec1d25' }}>
         <div style={{        
             width: '100%', height: 50, 
-            display: toggleState === 1 ? 'flex' : 'none', justifyContent: 'space-between', alignItems: 'center',
+            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
             color: 'white' }}
         >
                 <div style={{ display: 'flex', alignItems: 'center', width: '10%', height: '90%', borderRight: '2px solid rgba(255, 255, 255, 0.5)' }}>

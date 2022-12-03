@@ -9,8 +9,10 @@ function App() {
 
   return (
     <div className="App" style={{ width: '100%', height: '100%' }}>
-      <div style={{ width: 100, height: 10 }} onClick={() => setToggleState(1)}>Scheduled</div>
-      <div style={{ width: 100, height: 10 }} onClick={() => setToggleState(2)}>Scheduled</div>
+      <div style={{ display: 'flex', flexDirection: 'row', width: 300 }}>
+        <div style={{ width: 100, height: 10, background: 'grey' }} onClick={() => setToggleState(1)}>Scheduled</div>
+        <div style={{ width: 100, height: 10, background: 'grey' }} onClick={() => setToggleState(2)}>Scheduled</div>
+      </div>
       <Transactions {...{ setToggleState, toggleState }} />
       <ScheduledTransactions {...{ setToggleState, toggleState }} />
     </div>
@@ -18,3 +20,4 @@ function App() {
 }
 
 export default App;
+-
